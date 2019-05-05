@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<property>
+		<name>request.ip.proxy.open</name>
+		<value>true</value>
+		<description>是否开启代理模式，如果开启代理模式，需要提供代理的列表</description>
+	</property>
+	
+	<property>
+		<name>request.proxys.file</name>
+		<value></value>
+		<description>该文件里保存代理所有可以代理访问的地址，以换行符分割</description>
+	</property>
+	
+	<property>
+		<name>queen.thread.max</name>
+		<value>10</value>
+		<description>抓取url数据的queen中，线程的最大个数。默认最大线程为10</description>
+	</property>
+	
+	<property>
+		<name>queue.max.size</name>
+		<value>200</value>
+		<description>队列中存放的最大数据量</description>
+	</property>
+	
+	
+	<property>
+		<name>fetch.url.file</name>
+		<value>mdata-urls.xml</value>
+		<description>待抓取链接存储的位置</description>
+	</property>
+	
+	<property>
+		<name>fetch.job.step.num</name>
+		<value>2000</value>
+		<description>表示启动一次任务抓取的链接数。上次总数3069</description>
+	</property>
+	
+	<property>
+		<name>fetch.intermediate.file</name>
+		<value>F:\moviedb\dbmoviedb\reply_fetched.txt</value>
+		<description>存储已经抓取过的数据信息</description>
+	</property>
+	
+	
+	<property>
+		<name>mysql.driver</name>
+		<value>com.mysql.jdbc.Driver</value>
+		<description>com.mysql.jdbc.Driver</description>
+	</property>
+	
+	<property>
+		<name>mysql.url</name>
+		<value>jdbc:mysql://127.0.0.1:3306/db_comments</value>
+		<description>url</description>
+	</property>
+	
+	<property>
+		<name>mysql.username</name>
+		<value>root</value>
+		<description>com.mysql.jdbc.Driver</description>
+	</property>
+	
+	<property>
+		<name>mysql.password</name>
+		<value>liushuai0513</value>
+		<description>com.mysql.jdbc.Driver</description>
+	</property>
+	
+	
+	<property>
+		<name>mysql.read.split.size</name>
+		<value>1000</value>
+		<description>每个mapper处理的最大条数</description>
+	</property>
+	
+	<property>
+		<name>mysql.data.sum</name>
+		<value>3000</value>
+		<description>从数据库中读取的总条数</description>
+	</property>
+	
+</configuration>
